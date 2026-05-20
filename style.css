@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* контейнер */
+.main-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* заголовок */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* карточки */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* кнопки */
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+/* главная кнопка */
+.btn-main {
+    background: #4f46e5;
+    color: white;
+}
+
+.btn-main:hover {
+    background: #4338ca;
+}
+
+/* удалить */
+.btn-delete {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #dc2626;
+}
+
+/* обычная */
+.btn-gray {
+    background: #e5e7eb;
+    color: black;
+}
+
+.btn-gray:hover {
+    background: #d1d5db;
+}
+
+/* поля */
+.input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+/* сложности */
+.badge {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.easy {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.medium {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.hard {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* выполнено */
+.completed {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+/* действия */
+.actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+/* форма */
+form {
+    margin-top: 15px;
+}
+
+/* текст */
+.muted {
+    color: #666;
+    font-size: 14px;
+}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card">
+    <div class="title">Login</div>
+
+    <form method="post">
+        {% csrf_token %}
+        <input name="username" placeholder="Username" class="input">
+        <input name="password" type="password" placeholder="Password" class="input">
+        <button class="btn btn-main">Enter</button>
+    </form>
+
+    <p class="muted">
+        Нет аккаунта? <a href="{% url 'register' %}">Регистрация</a>
+    </p>
+</div>
+{% endblock %}
